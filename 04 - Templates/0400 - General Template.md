@@ -4,7 +4,7 @@ var note;
 ////////////////////////////////////// Main //////////////////////////////////////
 
 // Present selection of Search Tags to user
-let tag = await tp.system.suggester(["Primary", "Secondary", "Project Overview", "Project Issue", "User Story", "Basic", "Tool", "README"], ["Primary", "Secondary", "Project Overview", "Project Issue", "User Story", "Basic", "Tool", "README"], true)
+let tag = await tp.system.suggester(["Primary", "Secondary", "Project Overview", "Project Issue", "User Story", "Basic", "Tool", "README", "Personal"], ["Primary", "Secondary", "Project Overview", "Project Issue", "User Story", "Basic", "Tool", "README", "Personal"], true)
 
 await setNoteStructure(tag, title);
 
@@ -53,7 +53,12 @@ async function setNoteStructure(note_tag, noteTitle) {
 		struct = "[[0410 - README]]";
 		file_destination = "03 - Content/";
 		isCat = false;
-	}  
+	}
+	else if (note_tag.startsWith("Personal")) {
+		struct = "[[0411 - Personal]]";
+		file_destination = "05 - Personal/";
+		isCat = false;
+	}	 
 	else {
 		console.log("You selected an option outside what was expected.");
 		console.log("Try again.");	
@@ -64,7 +69,7 @@ async function setNoteStructure(note_tag, noteTitle) {
 async function buildNote(notetitle, content, dest, category){
 	let metadata = "[[0404 - Metadata]]";
 	let header = "[[0403 - Content Header]]";
-	let resources = "[[0411 - Resources]]";
+	let resources = "[[0412 - Resources]]";
 	
 	var meta = await tp.file.include(metadata);
 	var body = await tp.file.include(content);
