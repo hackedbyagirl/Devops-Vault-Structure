@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "543d2cced8653790",
+        "id": "390c220c92c96357",
         "type": "tabs",
         "children": [
           {
-            "id": "4e3a92b18e5370b1",
+            "id": "9d5694461521ae8f",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -139,17 +139,17 @@
       "obsidian-excalidraw-plugin:New Excalidraw drawing": false
     }
   },
-  "active": "4e3a92b18e5370b1",
+  "active": "9d5694461521ae8f",
   "lastOpenFiles": [
+    "04 - Templates/04 - Template Structures/0408 - Basic.md",
+    "04 - Templates/0400 - General Template.md",
+    "04 - Templates/04 - Template Structures/0412 - Resources.md",
+    "04 - Templates/04 - Template Structures/0411 - Personal.md",
     "03 - Content/Obsidian - Getting Started.md",
     "03 - Content/Templater.md",
     "03 - Content/Obsidian - Git.md",
     "03 - Content/Obsidian Plugins.md",
     "03 - Content/Obsidian General Settings.md",
-    "02 - Secondary Categories/02 - Obsidian.md",
-    "04 - Templates/04 - Template Structures/0411 - Resources.md",
-    "01 - Primary Categories/01 - Administration and Management.md",
-    "00 - Global Index.md",
-    "04 - Templates/0400 - General Template.md"
+    "02 - Secondary Categories/02 - Obsidian.md"
   ]
 }
